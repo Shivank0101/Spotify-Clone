@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="logo">
+        <i class="fa-brands fa-spotify" id="line"></i>
+        <h2> <b>Spotify</b></h2>
+</div>
+    <h2>Sign up for free to start listening.</h2>
+<div class="sign-up">
+    <button  class="facebook"><i class="fa-brands fa-facebook" id="fb"></i>Sign up with Facebook</button>
+    <button  class="Google"><i class="fa-brands fa-google" id="gg"></i>Sign up with Google</button>
+</div>
+<div class="E">
+<p>or</p>
+<h3>Sign up with your email address</h3>
+</div>
+
+<form action="submit.php" method="post" class="spot">
+    <label for="email" ><b>What's your email address?</b> </label>
+    <br>
+    <input type="email"   id="email"  required placeholder="Enter your email.">
+    <br>
+    <label for="password"><b>Create a password:</b></label>
+    <br>
+    <input type="password" id="password"  required placeholder="Create a password">
+    <br>
+    <label for="call"><b>What should we call you?</b></label>
+    
+    <br>
+    <input type="text" id="call"  required placeholder="Enter a profile name">
+    <br>
+    
+    <label id="Birth"> <b>What's your date of birth?</b></label>
+    <div class="DOB">
+    <select class="Month" required>
+        <option >Select Month</option>
+        <option >January</option>
+        <option >February</option>
+        <option >March</option>
+        <option >April</option>
+        <option >May</option>
+        <option >June</option>
+        <option >July</option>
+        <option >August</option>
+        <option >September</option>
+        <option >October</option>
+        <option >November</option>
+        <option >December</option>
+    </select>
+    <label class="Day">Select a day:</label>
+  <input type="number" id="day" name="day" min="1" max="31" required placeholder="DD">
+  <label for="year">Enter a year:</label>
+  <input type="number" id="year" name="year" min="1900" max="2023" value="2023" required>
+</div>
+    <br>
+    <label><b> What's your gender?</b></label>
+    <div>
+    <input type="radio" > Male
+    <input type="radio" > Female
+    <input type="radio" > Other
+    <input type="radio" > Prefer not to say
+</div>
+<br>
+<label>
+    <input type="checkbox" name="marketing_permission" value="yes">
+    Share my registration data with Spotify’s content providers for marketing purposes.
+</label>
+    <br>
+
+    <button class="Sign">Sign up</button>
+</form>
+
+</body>
+</html>
